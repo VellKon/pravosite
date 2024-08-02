@@ -110,6 +110,15 @@ main h1 {
     flex-direction: column;
     justify-content: space-between;
 }
+.document-card-container:hover {
+    transition: 0.5s;
+    transform: translateY(-10px);
+    
+    .document-card{
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
 
 .document-card-shadow {
     position: absolute;
@@ -140,6 +149,12 @@ main h1 {
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Добавляет тень снизу */
     font-size: 16px;
+}
+.document-card button:hover {
+    transition: 0.3s;
+    background-color: #21D090;
+    color: #fff;
+    /* border: 2px solid #ffffff; */
 }
 
 .quantity-container{
