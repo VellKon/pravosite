@@ -25,7 +25,7 @@ a{
     margin-bottom: 10px;
 }
 
-.document-card p {
+.discription{
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
@@ -68,17 +68,7 @@ a{
     justify-content: space-between;
 }
 
-.q-1, .q-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 43px;
-    height: 43px;
-    border: 2px solid #52B4DE;
-    border-radius: 5px;
-}
-
-.q-3, .q-4{
+.q-2, .q-3, .q-4{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,19 +99,7 @@ a{
 
 }
 
-.b-1, .b-2 {
-    align-self: flex-end;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #52B4DE;
-    border-radius: 100px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Добавляет тень снизу */
-    font-size: 16px;
-}
-
-.b-3, .b-4 {
+.b-2, .b-3, .b-4 {
     align-self: flex-end;
     padding: 10px 20px;
     background-color: #fff;
@@ -133,45 +111,20 @@ a{
     font-size: 16px;
 }
 
-
-/* hover 1*/
-
-.dcc-1 .dc-1,
-.dcc-1 .dcs-1 {
-    transition: box-shadow 0.5s, border 0.1ms, transform 0.5s ease-in-out;
-}
-
-.dcc-1:hover {
-    transition: 0.5s ease-in-out;
-    transform: translateY(-5px);
-
-        .dc-1{
-            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-            border: 2px solid #52B4DE;
-        } 
-
-        .dcs-1{
-            border: 2px solid #52B4DE;
-            transform: rotate(2deg);
-        }
-} 
-
-
-.b-1:hover {
-    transition: 0.3s;
+.new{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     background-color: #52B4DE;
-    color: #fff;
-    /* padding: 13px 23px; */
+    width: 100px;
+    height: 35px;
+    border: 2px solid #52B4DE;
+    font-size: 20px;
+    border-radius: 20px;
+    color: #ffffff;
 }
 
 /* hover 2 */
-
-.a-2{
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-
 
 .dcc-2 .dc-2,
 .dcc-2 .dcs-2 {
@@ -180,26 +133,28 @@ a{
 
 .dcc-2:hover {
     transition: 0.5s ease-in-out;
-    transform: translateY(-10px);
 
         .dc-2{
             box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-            border: 2px solid #52B4DE;
+            border: 2px solid #21D090;
         } 
 
         .dcs-2{
-            border: 2px solid #52B4DE;
+            border: 2px solid #21D090;
+            transform: rotate(2deg);
         }
-        .a-2{
-            visibility: visible;
-            opacity: 1;
-        }
-} 
 
+        .b-2{
+            transition: 0.3s;
+            background-color: #21D090;
+            color: #fff;
+    
+        }
+}
 
 .b-2:hover {
     transition: 0.3s;
-    background-color: #52B4DE;
+    background-color: #21D090;
     color: #fff;
 }
 
@@ -223,14 +178,14 @@ a{
             border: 2px solid #21D090;
             transform: rotate(2deg);
         }
+
+        .b-3{
+            transition: 0.3s;
+            background-color: #21D090;
+            color: #fff;
+    
+        }
 }
-
-    .b-3:hover{
-        transition: 0.3s;
-        background-color: #21D090;
-        color: #fff;
-
-    }
 
 /* hover 4 */
 
@@ -263,11 +218,11 @@ a{
             opacity: 1;
         }
 
-    .b-4:hover{
+    .b-4{
         transition: 0.3s;
         background-color: #21D090;
         color: #fff;
 
     }
-} 
+}
 
