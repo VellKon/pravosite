@@ -225,6 +225,13 @@ a{
         }
 }
 
+    .b-3:hover{
+        transition: 0.3s;
+        background-color: #21D090;
+        color: #fff;
+
+    }
+
 /* hover 4 */
 
 .a-4{
