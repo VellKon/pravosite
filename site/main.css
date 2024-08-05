@@ -124,9 +124,9 @@ a{
 .b-3, .b-4 {
     align-self: flex-end;
     padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #21D090;
+    background-color: #21D090;
+    color: #fff;
+    border: none;
     border-radius: 100px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Добавляет тень снизу */
@@ -223,14 +223,6 @@ a{
             border: 2px solid #21D090;
             transform: rotate(2deg);
         }
-} 
-
-
-.b-3:hover {
-    transition: 0.3s;
-    background-color: #21D090;
-    color: #fff;
-    /* padding: 13px 23px; */
 }
 
 /* hover 4 */
@@ -249,7 +241,7 @@ a{
 
 .dcc-4:hover {
     transition: 0.5s ease-in-out;
-    transform: translateY(-10px);
+    /* transform: translateY(-3px); */
 
         .dc-4{
             box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
@@ -264,11 +256,4 @@ a{
             opacity: 1;
         }
 } 
-
-
-.b-4:hover {
-    transition: 0.3s;
-    background-color: #21D090;
-    color: #fff;
-}
 
