@@ -20,6 +20,21 @@ a{
     color: inherit;
 }
 
+.quantity-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border: 2px solid #21D090;
+    border-radius: 5px;
+}
+
 .document-card h2 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -30,14 +45,6 @@ a{
     color: #666;
     margin-bottom: 20px;
     flex-grow: 1;
-}
-
-.arrow {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    font-size: 1.5em;
-    color: #00bcd4;
 }
 
 .document-card-container {
@@ -63,28 +70,6 @@ a{
     justify-content: space-between;
 }
 
-.quantity-container{
-    display: flex;
-    justify-content: space-between;
-}
-
-.q-2, .q-3, .q-4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 43px;
-    height: 43px;
-    border: 2px solid #21D090;
-    border-radius: 5px;
-}
-
-.container-button-and-arrow{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .document-card-shadow {
     position: absolute;
     top: -15px;
@@ -99,7 +84,15 @@ a{
 
 }
 
-.b-2, .b-3, .b-4 {
+.arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    color: #00bcd4;
+}
+
+.button{
     align-self: flex-end;
     padding: 10px 20px;
     background-color: #fff;
@@ -111,118 +104,29 @@ a{
     font-size: 16px;
 }
 
-.new{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    background-color: #52B4DE;
-    width: 100px;
-    height: 35px;
-    border: 2px solid #52B4DE;
-    font-size: 20px;
-    border-radius: 20px;
-    color: #ffffff;
-}
-
-/* hover 2 */
-
-.dcc-2 .dc-2,
-.dcc-2 .dcs-2 {
+.document-card-container, .document-card, .document-card-shadow{
     transition: box-shadow 0.5s, border 0.1ms, transform 0.5s ease-in-out;
 }
 
-.dcc-2:hover {
-    transition: 0.5s ease-in-out;
-
-        .dc-2{
-            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-            border: 2px solid #21D090;
-        } 
-
-        .dcs-2{
-            border: 2px solid #21D090;
-            transform: rotate(2deg);
-        }
-
-        .b-2{
-            transition: 0.3s;
-            background-color: #21D090;
-            color: #fff;
-    
-        }
-}
-
-.b-2:hover {
-    transition: 0.3s;
-    background-color: #21D090;
-    color: #fff;
-}
-
-/* hover 3*/
-
-.dcc-3 .dc-3,
-.dcc-3 .dcs-3 {
-    transition: box-shadow 0.5s, border 0.1ms, transform 0.5s ease-in-out;
-}
-
-.dcc-3:hover {
+.document-card-container:hover{
     transition: 0.5s ease-in-out;
     transform: translateY(-5px);
 
-        .dc-3{
+        .document-card{
             box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
             border: 2px solid #21D090;
         } 
 
-        .dcs-3{
+        .document-card-shadow{
             border: 2px solid #21D090;
             transform: rotate(2deg);
         }
 
-        .b-3{
+        .button{
             transition: 0.3s;
             background-color: #21D090;
             color: #fff;
     
         }
-}
-
-/* hover 4 */
-
-.a-4{
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-
-
-.dcc-4 .dc-4,
-.dcc-4 .dcs-4 {
-    transition: box-shadow 0.5s, border 0.1ms, transform 0.5s ease-in-out;
-}
-
-.dcc-4:hover {
-    transition: 0.5s ease-in-out;
-    /* transform: translateY(-3px); */
-
-        .dc-4{
-            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-            border: 2px solid #21D090;
-        } 
-
-        .dcs-4{
-            border: 2px solid #21D090;
-        }
-        .a-4{
-            visibility: visible;
-            opacity: 1;
-        }
-
-    .b-4{
-        transition: 0.3s;
-        background-color: #21D090;
-        color: #fff;
-
-    }
 }
 
